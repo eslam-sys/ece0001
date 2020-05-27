@@ -1,0 +1,71 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل</title>
+    <link rel="stylesheet" href="css/register.css"/>
+    </head>
+    <body>
+    <!-- register form-->
+        <div class="na">
+      <a  class="home" href="index.html">الصفحة الرئيسية</a>
+      <a class="active" href="register form.html">تسجيل</a> 
+        </div> 
+        <div class="form">
+            <center><h3>|Welcome to Archaeological site website|</h3>
+                <h4>*Creat an account for free*</h4>
+            </center>
+       <form method="post" autocomplete="off" action="index.html">
+           <div class="put">
+        <input type="text"  id="nam" name="firstname" placeholder="firstname"  required/>
+               
+        <input type="text" name="lastname" placeholder="lastname" required/>
+           </div>
+           <div class="put">
+        <input type="email" name="email" placeholder="e-mail"  pattern="^[A-Za-z0-9_-]+@(yahoo|gmail|hotmail)\.com$" title="example@example.com like (e_hTcsj15@yahoo.com)" required/>
+           </div>
+               <div class="put">
+        <input type="tel" name="tel" placeholder="mobil phone number" pattern="[0-9]{11}"required/>
+           </div>
+           <div class="put">
+        <input type="text" name="address" placeholder="address" required/>
+           </div>
+           
+           <div class="putg">
+        <div class="ge">Gender</div><br/>
+        <input type="radio" name="gender" style="cursor: pointer;" required/>    
+            <lable>male</lable>
+               <br/><br/>
+        <input type="radio" name="gender" style="cursor: pointer;" required/>
+            <lable>female</lable>
+           </div>
+           
+           <div class="put">
+        <input type="password" id="psw" name="password" placeholder="password" 
+
+            pattern="(?=.*^[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?!.*\s).{8}"
+               title="• the password must start with uppercase character.
+                      • the password must include 8 characters no more no less. 
+                      • the password must include one digit at least. 
+                      • the password must include one special character like - , _ , #, &, and *.
+                      • No white spaces allowed in the password 
+                      • like  A#z12saA"   
+               required/>
+           </div>
+            
+           <div class="check">
+           <p id="fs" class="not">* first uppercase letter </p>
+           <p id="ss" class="not">* one digit at least </p>
+           <p id="ts" class="not">* one special character at least (*,-,_,#,&amp;)</p>
+           <p id="fos" class="not">* 8 characters only </p>
+           <p id="fis" class="not">* no spaces </p>
+           </div>
+           <center>
+        <input type="submit"  onclick="sayHello()" class="sub" value="Sign up"/>
+           </center>
+        </form>
+        </div>
+        <script src="js/register.js"></script>
+            </body>
+    </html>
